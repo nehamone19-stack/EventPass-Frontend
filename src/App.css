@@ -234,6 +234,286 @@ a {
   color: #4779b8;
 }
 
+
+/* ===== Create Event Page - UI Only ===== */
+
+.create-event-page {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 40px 32px;
+  box-sizing: border-box;
+  background: #f3f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.create-event-page form {
+  width: 100%;
+  max-width: 720px;
+  box-sizing: border-box;
+  padding: 32px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e1e8f2;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(35, 55, 85, 0.07);
+}
+
+/* Heading and text */
+.create-event-page h1,
+.create-event-page h2 {
+  color: #263447;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.create-event-page label {
+  display: block;
+  margin: 0 0 8px;
+  color: #46566d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Inputs and text areas */
+.create-event-page input,
+.create-event-page textarea,
+.create-event-page select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  margin: 0 0 22px;
+  border: 1px solid #d8e1ee;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #263447;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-event-page textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.create-event-page input:focus,
+.create-event-page textarea:focus,
+.create-event-page select:focus {
+  border-color: #3769a8;
+  box-shadow: 0 0 0 3px rgba(55, 105, 168, 0.12);
+  background: #ffffff;
+}
+
+/* Buttons */
+.create-event-page button {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #29384c;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.create-event-page button:hover {
+  background: #3769a8;
+  transform: translateY(-1px);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .create-event-page {
+    padding: 24px 16px;
+  }
+
+  .create-event-page form {
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-event-page {
+    padding: 16px 10px;
+  }
+
+  .create-event-page form {
+    padding: 20px 14px;
+  }
+}
+
+/* ===== Create Event Page Styling ===== */
+
+.form-container {
+  width: min(680px, calc(100% - 40px));
+  margin: 40px auto;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e1e8f2;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(35, 55, 85, 0.07);
+}
+
+.form-container h1 {
+  margin: 0 0 24px;
+  color: #263447;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  margin: 0;
+  border: 1px solid #d8e1ee;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #263447;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.form-container input {
+  min-height: 48px;
+}
+
+.form-container textarea {
+  min-height: 115px;
+  resize: vertical;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #3769a8;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(55, 105, 168, 0.12);
+}
+
+.form-container p {
+  margin: 4px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.form-container p strong {
+  color: #334155;
+}
+
+.form-container button {
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 18px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 10px;
+  background: #29384c;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.form-container button:hover {
+  background: #3769a8;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-container {
+    width: calc(100% - 32px);
+    margin: 24px auto;
+    padding: 24px;
+    border-radius: 15px;
+  }
+
+  .form-container h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: calc(100% - 24px);
+    margin: 16px auto;
+    padding: 20px 16px;
+  }
+
+  .form-container h1 {
+    font-size: 25px;
+  }
+}
+
+
+/* ===== Final Create Event Layout Fix ===== */
+
+.form-container {
+  width: min(680px, calc(100% - 48px)) !important;
+  max-width: 680px !important;
+  margin: 40px auto !important;
+  padding: 32px !important;
+  box-sizing: border-box !important;
+  float: none !important;
+  position: relative;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Keep the form full-width inside its card */
+.form-container form {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Prevent fields from overflowing */
+.form-container input,
+.form-container textarea {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .form-container {
+    width: calc(100% - 32px) !important;
+    margin: 24px auto !important;
+    padding: 24px !important;
+  }
+}
+
+
 /* Ticket illustration */
 
 .hero-art {
