@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 
 import Login from "./login";
+import EditEvent from "./EditEvent";
 import Register from "./register";
 import Events from "./Events";
 import CreateEvent from "./CreateEvent";
@@ -390,6 +391,11 @@ function App() {
         <Route
           path="/create-event"
           element={<CreateEvent />}
+        />
+
+        <Route
+          path="/edit-event/:id"
+          element={<EditEvent />}
         />
 
         <Route
